@@ -11,7 +11,7 @@ def preprocess(df, outputs, datetime, classification):
     data = Preprocess()
     data.numeric(df, outputs, datetime, classification)
     data.impute()
-    data.outliers(frac=0.1)
+    data.outliers(frac=0.05)
 
     return data.data
 
